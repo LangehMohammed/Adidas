@@ -1,0 +1,62 @@
+.container4 {
+  display: none;
+}
+
+@media only screen and (max-width: 959px) {
+  .container4 {
+    display: block;
+  }
+  .container4 .child1 {
+    padding: 20px;
+    background-color: #eceff1;
+  }
+  .container4 .child1 h5 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    font-family: "adineueProBold";
+    text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+  .container4 .child1 p {
+    margin: 0;
+    line-height: 22px;
+  }
+  .container4 .child1 div {
+    margin: 15px 0 0;
+  }
+  .container4 .child2 {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+  }
+  .container4 .child2 span {
+    font-size: 14px;
+    font-family: "adihausdin";
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+  .container4 .child2 .target {
+    margin: 0;
+    height: 27px;
+  }
+  .container4 .child2 .target svg {
+    width: 24px;
+    height: 24px;
+  }
+  .container4 .child3 {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 15px;
+  }
+  .container4 .child3 a {
+    color: white;
+    font-family: "adihausdinbold";
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 20px;
+  }
+}/*# sourceMappingURL=Opinion.css.map */

@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'adihausdin';
+  src: url(/src/Fonts/adihausdin.ttf);
+}
+
+@font-face {
+  font-family: 'adihausdinbold';
+  src: url(/src/Fonts/AdihausDIN\ Bold.ttf);
+}
+
+@font-face {
+  font-family: 'adineuePro';
+  src: url(/src/Fonts/adineue\ PRO.ttf);
+}
+
+@font-face {
+  font-family: 'adineueProBold';
+  src: url(/src/Fonts/adineue\ PRO\ Bold.ttf);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: 'adihausdin';
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input{
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+h2{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}

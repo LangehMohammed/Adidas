@@ -1,0 +1,174 @@
+.container7 {
+  margin: 0 60px 40px;
+  padding: 0 4px;
+  position: static;
+  display: flex;
+  flex-direction: column;
+}
+.container7 header .wrapper {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.container7 header .wrapper .buttons {
+  display: flex;
+  gap: 8px;
+}
+.container7 header .wrapper .buttons button {
+  padding: 12px;
+  font-size: 16px;
+  font-family: "adihausdinbold";
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  cursor: pointer;
+}
+.container7 header .wrapper .buttons .child1 {
+  color: #ffffff;
+  background-color: #000000;
+}
+.container7 header .wrapper .buttons .child2 {
+  color: #000000;
+  background-color: #ffffff;
+  border: #000000 solid 1px;
+}
+.container7 header .wrapper .buttons .child2:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+}
+.container7 header .wrapper a {
+  display: inline-flex;
+  text-decoration: underline;
+  font-size: 18px;
+  align-items: end;
+}
+.container7 ul {
+  position: relative;
+  scroll-padding: 48px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  gap: 10px;
+  padding: 1px 1px 32px 1px;
+}
+.container7 ul::-webkit-scrollbar {
+  height: 4px;
+}
+.container7 ul::-webkit-scrollbar-track {
+  background-color: #eceff1;
+}
+.container7 ul::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+.container7 ul li {
+  cursor: pointer;
+}
+.container7 ul li section {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  position: relative;
+}
+.container7 ul li section:hover {
+  border: #000000 solid 1px;
+  margin: -1px;
+}
+.container7 ul li section:hover .price {
+  margin-bottom: 5px;
+  transition: 0.3s;
+}
+.container7 ul li section .holder {
+  width: 278px;
+  height: 100%;
+  position: relative;
+}
+.container7 ul li section .holder img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container7 ul li section .holder .heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.container7 ul li section .holder .heart svg {
+  width: 24px;
+  height: 27px;
+}
+.container7 ul li section .holder .price {
+  position: absolute;
+  font-size: 16px;
+  padding: 2px 5px;
+  left: 5px;
+  bottom: 0;
+  background-color: white;
+}
+.container7 ul li section .caption {
+  padding-left: 10px;
+  position: relative;
+}
+.container7 ul li section .caption p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 10px;
+}
+.container7 ul li section .caption .target {
+  color: #767677;
+  margin: 5px 5px 20px 0;
+}
+.container7 ul li section .caption .shop {
+  display: none;
+}
+
+@media only screen and (max-width: 1289px) {
+  .container7 ul {
+    gap: 8px;
+  }
+  .container7 ul li section .holder {
+    width: 208px;
+  }
+  .container7 ul li section .holder .heart {
+    top: 5px;
+    right: 3px;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .container7 ul li section .holder {
+    width: 316px;
+  }
+  .container7 ul li section .caption .target {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 759px) {
+  .container7 {
+    margin: 0 30px 40px;
+    padding: 0 2px;
+  }
+  .container7 header .wrapper {
+    flex-direction: column;
+  }
+  .container7 header .wrapper a {
+    margin-top: 16px;
+  }
+  .container7 ul li section .holder {
+    width: 163px;
+  }
+  .container7 ul li section .holder .price {
+    font-size: 12px;
+  }
+  .container7 ul li section .caption p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media only screen and (max-width: 389px) {
+  .container7 {
+    margin: 0 14px 40px;
+  }
+}/*# sourceMappingURL=Arrivals.css.map */

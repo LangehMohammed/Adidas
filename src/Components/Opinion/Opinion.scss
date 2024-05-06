@@ -1,0 +1,63 @@
+.container4{
+    display: none;
+}
+
+@media only screen and (max-width: 959px){
+    .container4{
+        display: block;
+        .child1{
+            padding: 20px;
+            background-color: #eceff1;
+            h5{
+                margin: 0 0 15px;
+                font-size: 18px;
+                font-family: 'adineueProBold';
+                text-transform: uppercase;
+                line-height: 24px;
+                letter-spacing: 1px;
+            }
+            p{
+                margin: 0;
+                line-height: 22px;
+            }
+            div{
+                margin: 15px 0 0;
+            }
+        }
+        .child2{
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            padding: 10px;
+            align-items: center;
+            span{
+                font-size: 14px;
+                font-family: 'adihausdin';
+                text-transform: uppercase;
+                margin-left: 10px;
+            }
+            .target{
+                margin: 0;
+                height: 27px;
+                svg{
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+        .child3{
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            padding: 15px;
+            a{
+                color: white;
+                font-family: 'adihausdinbold';
+                font-size: 14px;
+                text-transform: uppercase;
+                line-height: 20px;
+            }
+        }
+    }
+
+}

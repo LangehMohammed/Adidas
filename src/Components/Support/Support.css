@@ -1,0 +1,73 @@
+.container10 .mobile-view {
+  display: none;
+}
+.container10 .desktop-view {
+  display: flex;
+  flex-direction: row;
+  max-width: 1012px;
+  margin: 0px auto;
+  padding: 20px 0 0;
+}
+.container10 .desktop-view li {
+  padding: 20px 15px 30px;
+}
+.container10 .desktop-view li .target {
+  width: 91.16px;
+}
+.container10 .desktop-view li h5 {
+  font-family: "adineueProBold";
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin: 0 0 10px;
+}
+.container10 .desktop-view li ul li {
+  padding: 0;
+}
+.container10 .desktop-view li ul li a {
+  font-size: 14px;
+  line-height: 24px;
+}
+.container10 .desktop-view li ul li a span {
+  display: inline-flex;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 7px;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #101010;
+}
+.container10 .desktop-view li ul li a span svg {
+  color: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.container10 .desktop-view li ul li a:hover {
+  text-decoration: underline;
+}
+.container10 .desktop-view li ul li div {
+  height: 15px;
+}
+
+@media only screen and (max-width: 959px) {
+  .container10 .desktop-view {
+    display: none;
+  }
+  .container10 .mobile-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 15px 0;
+    background: #000000;
+  }
+  .container10 .mobile-view li {
+    padding: 10px 15px;
+  }
+  .container10 .mobile-view li a {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}/*# sourceMappingURL=Support.css.map */

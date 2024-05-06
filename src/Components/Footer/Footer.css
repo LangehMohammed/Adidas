@@ -1,0 +1,80 @@
+.container1 {
+  border-top: 1px solid #767677;
+  background-color: #282c31;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+.container1 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container1 ul li {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 0 15px;
+  border-right: 1px solid #d3d7da;
+}
+.container1 ul li .target2 {
+  display: flex;
+  width: 50px;
+  height: auto;
+  padding: 0 5px;
+  vertical-align: middle;
+}
+.container1 ul li .target2 img {
+  width: 40px;
+  height: 18.66px;
+}
+.container1 ul li button img {
+  width: 1.3em;
+  margin-right: 10px;
+}
+.container1 ul li button span {
+  line-height: 16px;
+  font-size: 12px;
+  color: #d3d7da;
+  text-align: center;
+}
+.container1 ul li a {
+  line-height: 16px;
+  font-size: 12px;
+  color: #d3d7da;
+  text-align: center;
+}
+.container1 ul .target {
+  display: none;
+  width: 100%;
+  border: none;
+}
+.container1 ul .target3 {
+  display: flex;
+}
+.container1 ul .target4 {
+  border: none;
+}
+.container1 div {
+  align-self: center;
+  padding: 20px 15px 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #d3d7da;
+  text-align: center;
+}
+
+@media only screen and (max-width: 959px) {
+  .container1 ul li {
+    border: none;
+  }
+  .container1 ul .target {
+    display: inline-block;
+  }
+  .container1 ul .target4 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Footer.css.map */

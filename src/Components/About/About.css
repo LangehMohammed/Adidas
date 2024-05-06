@@ -1,0 +1,45 @@
+.container2 {
+  width: 100%;
+  padding: 40px 0 50px;
+  background: #f5f5e5;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container2 .content {
+  margin: 0 60px;
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  padding: 0 4px;
+}
+.container2 .content h1, .container2 .content h2 {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  line-height: 36px;
+  font-family: "adihausdinbold";
+}
+.container2 .content p {
+  margin: 0;
+  line-height: 22px;
+}
+
+@media only screen and (max-width: 1119px) {
+  .container2 {
+    padding: 40px 0;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .container2 .content {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .container2 .content h2 {
+    margin: 40px 0 10px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container2 .content {
+    margin: 0 30px;
+  }
+}/*# sourceMappingURL=About.css.map */

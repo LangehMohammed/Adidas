@@ -1,0 +1,48 @@
+.container2{
+    width: 100%;
+    padding: 40px 0 50px;
+    background: #f5f5e5;
+    display: flex;
+    flex-wrap: wrap;
+    .content{
+        margin: 0 60px;
+        column-count: 2;
+        column-gap: 40px;
+        padding: 0 4px;
+        h1, h2{
+            font-size: 28px;
+            margin: 0 0 10px 0;
+            line-height: 36px;
+            font-family: 'adihausdinbold';
+        }
+        p{
+            margin: 0;
+            line-height: 22px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1119px){
+    .container2{
+        padding: 40px 0;
+    }
+}
+
+@media only screen and (max-width: 959px){
+    .container2{
+        .content{
+            column-count: 1;
+            h2{
+                margin: 40px 0 10px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .container2{
+        .content{
+            margin: 0 30px;
+        }
+    }
+}

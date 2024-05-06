@@ -1,0 +1,82 @@
+.container9{
+    margin: 0 60px 80px;
+    .wrapper{
+        .header{
+            h2{
+                font-size: 32px;
+                font-family: 'adihausdinbold';
+                line-height: 36px;
+            }
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(100% + 3rem);
+            margin: 0 0 18px;
+            .child{
+                margin: 65px 0 0;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                width: 32.3%;
+                padding: 0 4px;
+                a{
+                    display: inline-flex;
+                    align-items: center;
+                    font-size: 40px;
+                    font-family: 'adineueProBold';
+                    line-height: 40px;
+                    text-transform: lowercase;
+                    letter-spacing: 2px;
+                    width: 100%;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    padding: 0 0 0.4rem;
+                    margin-bottom: -1px;
+                    margin-right: 3rem;
+                    &:hover{
+                        border-bottom: 8px solid black;
+                        margin-bottom: -8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 959px){
+    .container9{
+        margin-bottom: 40px;
+        .wrapper{
+            .header{
+                h2{
+                    font-size: 22px;
+                }
+            }
+            .content{
+                width: 100%;
+                margin-top: 8px;
+                .child{
+                    width: 100%;
+                    margin-top: 24px;
+                    a{
+                        font-size: 36px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 759px){
+    .container9{
+        margin: 0 30px 40px;
+    }
+}
+
+@media only screen and (max-width: 389px){
+    .container9{
+        margin: 0 14px 40px;
+    }
+}

@@ -1,0 +1,761 @@
+.container {
+  z-index: 20;
+}
+.container .nav-wrapper {
+  background-color: white;
+}
+.container .nav-wrapper .ads .adsSection {
+  background-color: black;
+  color: white;
+  height: 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.container .nav-wrapper .ads .adsSection .adswrapper .holder div {
+  font-family: "adihausdinbold";
+  font-size: 11px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+}
+.container .nav-wrapper .ads .adsSection .adswrapper .holder div p {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+.container .nav-wrapper .ads .adsSection .adswrapper .holder div span {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.container .nav-wrapper .ads .adsSection .adswrapper .holder div span svg {
+  width: 1.8em;
+  height: 1.8em;
+}
+.container .nav-wrapper .ads .dropDownSection {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: -200vh;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  transition: top 0.5s ease-in-out;
+  z-index: 1000;
+}
+.container .nav-wrapper .ads .dropDownSection .ddwrapper .exitbtn {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.container .nav-wrapper .ads .dropDownSection .ddwrapper .exitbtn .wrapper {
+  margin-top: 3px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid black;
+}
+.container .nav-wrapper .ads .dropDownSection .ddwrapper .exitbtn .wrapper span svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  padding: 12px;
+}
+.container .nav-wrapper .ads .dropDownSection .ddwrapper .content {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 30px;
+  padding-left: 100px;
+  margin-bottom: 100px;
+}
+.container .nav-wrapper .ads .dropDownSection .ddwrapper .content section {
+  width: 300px;
+  display: block;
+  margin-right: 20px;
+}
+.container .nav-wrapper .ads .dropDownSection .ddwrapper .content section h4 {
+  font-family: "adihausdinbold";
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+.container .nav-wrapper .ads .dropDownSection .ddwrapper .content section p {
+  font-family: "adihausdin";
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+.container .nav-wrapper .ads .dropDownSection .ddwrapper .content section div {
+  margin: 0;
+  margin-bottom: 20px;
+  height: 22px;
+}
+.container .nav-wrapper .ads .dropDownSection .ddwrapper .content section div a {
+  text-decoration: underline;
+  color: black;
+  height: 16.89px;
+  display: inline-flex;
+}
+.container .nav-wrapper .ads .dropDownSection .ddwrapper .content section div a span {
+  font-family: "adihausdinbold";
+  font-size: 13px;
+  line-height: 1.3;
+  letter-spacing: 0.15em;
+}
+.container .nav-wrapper .ads .dropDownSection .ddwrapper .content section div a span:hover {
+  background-color: black;
+  color: white;
+}
+.container .nav-wrapper .ads .dropDownSection .ddwrapper .content section .second {
+  margin: 0;
+}
+.container .nav-wrapper .ads .dropDownSection.active {
+  top: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  position: fixed;
+}
+.container .nav-wrapper .ads .dropDownSection.deactivate {
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+.container .nav-wrapper .nav {
+  padding: 0 40px;
+  background-color: white;
+}
+.container .nav-wrapper .nav .min_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 32px;
+  position: static;
+}
+.container .nav-wrapper .nav .min_nav li {
+  display: flex;
+  height: 30px;
+  padding: 0 10px;
+  align-items: center;
+}
+.container .nav-wrapper .nav .min_nav li a {
+  font-size: 12px;
+}
+.container .nav-wrapper .nav .min_nav li a:hover {
+  text-decoration: underline;
+}
+.container .nav-wrapper .nav .min_nav li div button {
+  padding: 0 10px;
+  height: 32px;
+}
+.container .nav-wrapper .nav .min_nav li div button img {
+  width: 20px;
+  height: 10px;
+  margin: 2px;
+}
+.container .nav-wrapper .nav .min_nav .target {
+  padding: 0;
+}
+.container .nav-wrapper .nav .main_nav {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1.8fr 5fr 2fr;
+  align-items: center;
+}
+.container .nav-wrapper .nav .main_nav span {
+  display: flex;
+}
+.container .nav-wrapper .nav .main_nav span svg {
+  width: 21px;
+  height: 20px;
+}
+.container .nav-wrapper .nav .main_nav .mobile {
+  display: none;
+}
+.container .nav-wrapper .nav .main_nav .target {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .nav-wrapper .nav .main_nav .target .notification {
+  font-size: 12px;
+  font-family: "adihausdinbold";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffd200;
+  animation: moveNotification 2.5s alternate-reverse infinite;
+}
+.container .nav-wrapper .nav .main_nav .target .empty-promt {
+  position: absolute;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1019607843);
+  top: 100%;
+  right: 0;
+  width: 310px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  z-index: 100;
+}
+.container .nav-wrapper .nav .main_nav .target .empty-promt span {
+  font-size: 18px;
+  font-family: "adineueProBold";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+.container .nav-wrapper .nav .main_nav .target1 {
+  font-family: "adihausdinbold";
+}
+.container .nav-wrapper .nav .main_nav .menu {
+  position: relative;
+  top: -10px;
+}
+.container .nav-wrapper .nav .main_nav .menu svg {
+  width: 60px;
+  height: 38.39px;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 47px;
+  margin: 0 10px;
+  position: static;
+  z-index: 10;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper {
+  height: 47px;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .outer {
+  padding: 0 10px;
+  font-size: 14px;
+  position: relative;
+  height: 100%;
+  white-space: nowrap;
+  letter-spacing: 1.87px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  box-sizing: border-box;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .outer:hover {
+  border-bottom: #000 3px solid;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down {
+  position: absolute;
+  top: 48px;
+  left: -40px;
+  width: calc(100% + 80px);
+  border-bottom: 1px solid #eceff1;
+  border-top: 1px solid #eceff1;
+  background-color: #ffffff;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .child {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 0 80px;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .first-child .main-section {
+  border-right: 1px solid #eceff1;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .first-child .main-section img {
+  width: 130px;
+  height: auto;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .first-child .first-child-wrapper {
+  padding: 40px 0 0 0;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .first-child .first-child-wrapper .holder-1 {
+  margin-bottom: 20px;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .first-child .first-child-wrapper .holder-1 a {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "adihausdinbold";
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .first-child .first-child-wrapper .holder-1 a:hover {
+  text-decoration: underline;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .first-child .first-child-wrapper .holder-1 ul li a {
+  margin: 9px 0 0;
+  font-family: "adihausdin";
+  line-height: 16px;
+  text-transform: none;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .first-child .first-child-wrapper .holder-1 ul li .separator {
+  height: 20px;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .last-child li {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .last-child li a {
+  font-family: "adihausdinbold";
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .last-child li a:hover {
+  text-decoration: underline;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down hr {
+  height: 1px;
+  margin: 0;
+  background-color: #eceff1;
+  border: none;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .men {
+  display: none;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .men.activate {
+  display: block;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .men.deactivate {
+  display: none;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .women {
+  display: none;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .women.activate {
+  display: block;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .women.deactivate {
+  display: none;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .kids {
+  display: none;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .kids.activate {
+  display: block;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .kids.deactivate {
+  display: none;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .sale {
+  display: none;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .sale .child {
+  grid-template-columns: repeat(4, 1fr);
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .sale.activate {
+  display: block;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .sale.deactivate {
+  display: none;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .stripe-life {
+  display: none;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .stripe-life .child {
+  grid-template-columns: repeat(6, 1fr);
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .stripe-life.activate {
+  display: block;
+}
+.container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .stripe-life.deactivate {
+  display: none;
+}
+.container .nav-wrapper .nav .main_nav .min-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container .nav-wrapper .nav .main_nav .min-menu div {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  flex-grow: 1;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container .nav-wrapper .nav .main_nav .min-menu div input {
+  background-color: #ECEFF1;
+  max-width: 153px;
+  height: 32px;
+  padding: 0 35px 0 10px;
+  border: 1px solid #ffffff;
+  transition: border ease 1s;
+}
+.container .nav-wrapper .nav .main_nav .min-menu div input::-moz-placeholder {
+  color: black;
+  font-family: "adihausdin";
+  font-size: 14px;
+}
+.container .nav-wrapper .nav .main_nav .min-menu div input::placeholder {
+  color: black;
+  font-family: "adihausdin";
+  font-size: 14px;
+}
+.container .nav-wrapper .nav .main_nav .min-menu div input:focus {
+  outline: none;
+  border: 1px solid #767677;
+}
+.container .nav-wrapper .nav .main_nav .min-menu div input:focus::-moz-placeholder {
+  color: #ECEFF1;
+}
+.container .nav-wrapper .nav .main_nav .min-menu div input:focus::placeholder {
+  color: #ECEFF1;
+}
+.container .nav-wrapper .nav .main_nav .min-menu div div {
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container .nav-wrapper .nav .main_nav .min-menu div div span svg {
+  width: 21px;
+  height: 21px;
+  stroke-width: 2.4px;
+}
+.container .nav-wrapper .nav .main_nav .min-menu .shop-bag:hover .empty-promt {
+  display: flex;
+}
+.container .nav-wrapper .nav .main_nav .min-menu .target1 {
+  width: 24px;
+  height: 27px;
+}
+.container .mobile-menu {
+  overflow: hidden;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: -959px;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 150;
+  transition: left 0.4s ease-in-out;
+}
+.container .mobile-menu .header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 59px;
+  display: grid;
+  grid-template-columns: 13fr 1fr;
+  align-items: center;
+  border-bottom: 1px solid #eceff1;
+  background-color: white;
+}
+.container .mobile-menu .header a {
+  display: flex;
+  justify-content: center;
+  padding-left: 61px;
+}
+.container .mobile-menu .header a svg {
+  width: 50px;
+  height: 32px;
+}
+.container .mobile-menu .header button {
+  display: flex;
+  justify-content: flex-end;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container .mobile-menu .header button svg {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  padding: 10px;
+}
+.container .mobile-menu .content {
+  height: calc(100% - 124px);
+  margin-top: 60px;
+  padding: 10px 0;
+  overflow-y: scroll;
+}
+.container .mobile-menu .content ul li span {
+  font-size: 18px;
+  font-family: "adihausdin";
+  line-height: 24px;
+}
+.container .mobile-menu .content ul li button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  cursor: pointer;
+  padding: 0 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.container .mobile-menu .content ul li button .target {
+  font-family: "adihausdinbold";
+}
+.container .mobile-menu .content ul li button svg {
+  width: 16.5px;
+  height: 16.5px;
+}
+.container .mobile-menu .content ul li a {
+  display: block;
+  padding: 10px 30px;
+}
+.container .mobile-menu .content ul li div {
+  padding: 10px 0;
+}
+.container .mobile-menu .content hr {
+  height: 1px;
+  border: none;
+  margin: 10px 0;
+  background-color: #eceff1;
+  height: 1px;
+}
+.container .mobile-menu .footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+  padding: 0 30px;
+  border-top: 1px solid #eceff1;
+  background-color: white;
+}
+.container .mobile-menu .footer img {
+  width: 21px;
+  height: 11px;
+  margin-right: 15px;
+}
+.container .mobile-menu.active {
+  left: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.container .mobile-menu.deactivate {
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+.container .backdrop {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 19;
+}
+.container .backdrop.active {
+  display: block;
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.container .backdrop.deactivate {
+  animation: fadeOutAnimation ease 9s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+}
+
+@media only screen and (max-width: 1119px) {
+  .container .nav-wrapper .nav {
+    padding: 0 20px;
+  }
+  .container .nav-wrapper .nav .main_nav {
+    grid-template-columns: 1fr 5fr 2fr;
+  }
+  .container .nav-wrapper .nav .main_nav .menu-mid {
+    justify-content: flex-start;
+  }
+  .container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .outer {
+    font-size: 12px;
+  }
+  .container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down {
+    left: -20px;
+    width: calc(100% + 40px);
+  }
+  .container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .child {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 20px;
+  }
+  .container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .first-child .main-section {
+    border: none;
+  }
+  .container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .first-child .first-child-wrapper .holder-1 ul li a {
+    margin: 7px 0 0;
+    font-size: 12px;
+  }
+  .container .nav-wrapper .nav .main_nav .menu-mid .menu-mid-wrapper .drop-down .last-child li a {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1041px) {
+  .container .nav-wrapper .nav .main_nav .min-menu div input {
+    max-width: 75px;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .container .nav-wrapper .ads .adsSection {
+    height: 45px;
+  }
+  .container .nav-wrapper .ads .adsSection .adswrapper .holder div {
+    height: 45px;
+  }
+  .container .nav-wrapper .ads .adsSection .adswrapper .holder div span {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+  }
+  .container .nav-wrapper .ads .dropDownSection .ddwrapper .content {
+    padding-left: 60px;
+    padding-top: 126px;
+    margin-bottom: 200px;
+    flex-flow: column;
+  }
+  .container .nav-wrapper .ads .dropDownSection .ddwrapper .content section {
+    width: 400px;
+    margin-bottom: 80px;
+  }
+  .container .nav-wrapper .nav {
+    padding: 0 10px;
+  }
+  .container .nav-wrapper .nav .min_nav {
+    display: none;
+  }
+  .container .nav-wrapper .nav .main_nav {
+    grid-template-columns: 2fr 1fr 2fr;
+    padding: 5px 0;
+  }
+  .container .nav-wrapper .nav .main_nav .mobile {
+    display: block;
+  }
+  .container .nav-wrapper .nav .main_nav .mobile-first {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .container .nav-wrapper .nav .main_nav .mobile-first button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+  }
+  .container .nav-wrapper .nav .main_nav .mobile-first button svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 0.2px;
+  }
+  .container .nav-wrapper .nav .main_nav .mobile-first a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+  }
+  .container .nav-wrapper .nav .main_nav .mobile-first a svg {
+    width: 24px;
+    height: 27px;
+  }
+  .container .nav-wrapper .nav .main_nav .menu {
+    position: relative;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .container .nav-wrapper .nav .main_nav .menu svg {
+    width: 50px;
+    height: 32px;
+  }
+  .container .nav-wrapper .nav .main_nav .menu-mid {
+    display: none;
+  }
+  .container .nav-wrapper .nav .main_nav .min-menu {
+    display: none;
+  }
+  .container .nav-wrapper .nav .main_nav .mobile-last {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .container .nav-wrapper .nav .main_nav .mobile-last button span svg {
+    width: 21px;
+    height: 21px;
+    stroke-width: 2.4px;
+  }
+  .container .mobile-menu {
+    display: block;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .container .nav-wrapper .ads .dropDownSection {
+    height: 100vh;
+  }
+  .container .nav-wrapper .ads .dropDownSection .ddwrapper .content {
+    padding: 20px 20px 0;
+    margin-bottom: 180px;
+  }
+  .container .nav-wrapper .ads .dropDownSection .ddwrapper .content section {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+}
+@keyframes moveNotification {
+  90% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(-8px);
+  }
+  97% {
+    transform: translateY(0);
+  }
+  99% {
+    transform: translateY(-7.5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=Navigation.css.map */
